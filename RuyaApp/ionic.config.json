@@ -1,0 +1,7 @@
+{
+  "name": "RuyaApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

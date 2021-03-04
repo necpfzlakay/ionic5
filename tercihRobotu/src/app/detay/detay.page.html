@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>detay</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Bilgi</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{bilgi.universite}}</ion-card-subtitle>
+            <ion-card-title>{{bilgi.fakulte}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            {{bilgi.bolum}}
+        </ion-card-content>
+    </ion-card>
+
+
+
+
+    <div style="text-align: center;">
+        <ion-button color="danger" shape="round" fill="outline" (click)="favoriEkle(bilgi.id)">
+            Tercih listeme ekle
+            <ion-icon slot="start" name="star"></ion-icon>
+        </ion-button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

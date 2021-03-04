@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CALCULATOR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+<ion-card style=" height:100px;margin:1px;">
+  
+  <div class="ustdiv">  safsa  </div>
+  
+  <div class="altdiv">   {{gosterge}}  </div>
+  
+  </ion-card>
+
+
+
+<div class="butun">
+
+
+ 
+
+<ion-row class="aralik">
+<button class="yuvarla gri"     (click)="sifirla()" >C</button>
+<button class="yuvarla gri"     (click)="artieksi()">+/-</button>
+<button class="yuvarla gri"     (click)="yuzde()"   >%</button>
+<button class="yuvarla sari"    (click)="bolme()"   >/</button>
+</ion-row>
+<ion-row class="aralik">
+<button class="yuvarla acikgri" (click)="sayi(7)"   >7</button>
+<button class="yuvarla acikgri" (click)="sayi(8)"   >8</button>
+<button class="yuvarla acikgri" (click)="sayi(9)"   >9</button>
+<button class="yuvarla sari"    (click)="toplama()" >+</button>
+</ion-row>
+<ion-row class="aralik">
+<button class="yuvarla acikgri" (click)="sayi(4)"   >4</button>
+<button class="yuvarla acikgri" (click)="sayi(5)"   >5</button>
+<button class="yuvarla acikgri" (click)="sayi(6)"   >6</button>
+<button class="yuvarla sari"    (click)="cikarma()" >-</button>
+</ion-row>
+<ion-row class="aralik">
+<button class="yuvarla acikgri" (click)="sayi(1)"   >1</button>
+<button class="yuvarla acikgri" (click)="sayi(2)"   >2</button>
+<button class="yuvarla acikgri" (click)="sayi(3)"   >3</button>
+<button class="yuvarla sari"    (click)="carpma()"  >*</button>
+</ion-row>
+
+<ion-row class="aralik">
+<button class="yuvarla acikgri" (click)="sayi(0)"  style="width: 165px;border-radius: 36px;" >0</button>
+
+<button class="yuvarla acikgri" (click)="virgul()"   >,</button>
+<button class="yuvarla sari"    (click)="carpma()"  >=</button>
+</ion-row>
+</div>
+
+
+
+
+
+
+
+
+</ion-content>

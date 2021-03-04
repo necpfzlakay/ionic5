@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button>
+
+            </ion-menu-button>
+        </ion-buttons>
+        <!--         //////////////////              
+        <ion-button style="position: absolute; right: 0px;" (click)="openModal()">
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-button>
+           ///////////////////               -->
+        <ion-title>Account</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+
+
+
+    <div style="text-align: center;position: relative;">
+        <div style="position: absolute;top: 150px;width: 80%;left: 35px;" *ngIf="user=='[]';else elseblock">
+            <ion-item>
+                <ion-label position="floating">Username</ion-label>
+                <ion-input type="text" [(ngModel)]="username"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+
+            <ion-button (click)="doLogin(username,password)" expand="block">giriş yap</ion-button>
+
+            <ion-button (click)="doLogin(username,password)" expand="round">hesabın yok mu?</ion-button>
+        </div>
+
+        <ng-template #elseblock> sdgdsg </ng-template>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</ion-content>
